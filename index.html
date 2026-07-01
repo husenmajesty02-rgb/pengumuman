@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260701-05-1ec4861"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman SPMB SMK Mafsada</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+body{font-family:'DM Sans',sans-serif}
+.result-lulus{border-left:6px solid #16a34a}
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+  <script src="/_sdk/0b3af1c300e720aa.resizing_sdk.js" type="text/javascript" integrity="sha512-nX1P6oXZmEY5wCI2lUVg3BwKu1cr0yi+ZpXgZ0Yn90vkSwvpmyzBMvOyD6VLJUtBwFI2dSrw1b6OvORxSggw3w=="></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen">
+  <header class="relative w-full h-64 overflow-hidden"><img data-template-id="hero-img" class="canva-image w-full h-full object-cover" loading="lazy">
+   <div class="absolute inset-0 bg-black/50"></div>
+   <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+    <h1 data-template-id="main-title" class="canva-text font-bold text-white drop-shadow-lg"></h1>
+    <p data-template-id="sub-title" class="canva-text text-white/90 mt-2"></p>
+   </div>
+  </header>
+  <main class="max-w-lg mx-auto px-4 py-10">
+   <div data-template-id="search-card" class="canva-card bg-white rounded-2xl shadow-xl p-6"><label data-template-id="input-label" class="canva-text block font-medium mb-2" for="nama-input"></label>
+    <form id="search-form" class="flex gap-2"><input id="nama-input" data-template-id="nama-input" class="canva-input flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500" type="text"> <button data-template-id="cek-btn" type="submit" class="canva-button px-5 py-2 rounded-lg font-medium"></button>
+    </form>
+    <div id="result-area" class="mt-6 hidden">
+     <div id="result-card" class="rounded-lg p-4 bg-gray-50 result-lulus"></div>
+    </div>
+    <div id="error-area" class="mt-4 hidden">
+     <p data-template-id="error-msg" class="canva-text text-red-600 text-center font-medium"></p>
+    </div>
+   </div>
+   <p data-template-id="footer-note" class="canva-text text-center mt-8 text-sm text-gray-500"></p>
+  </main>
+  <script src="/_sdk/a57e1ce6823cfcdc.editing_sdk.js" integrity="sha512-kNK9Lfxs3JxWT717gHDYE+wlveaAj/VZXdy7sZdJAoa7Ps3DhgunLxr4od2Pr1ZqeSpJV2bST0X2ZhdP0AnInQ=="></script>
+  <script>
+const data=[
+{no:"1",nama:"DWI ANGELIA PUTRI",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"2",nama:"ANANDA ELLY SAFITRI",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"4",nama:"ICHA APRILIA",sekolah:"SMP N 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"9",nama:"RARA FAUZIAH",sekolah:"SMP IT Aqsa Al Maani",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"10",nama:"PUTRI ARNELLISA",sekolah:"SMP Negeri 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"12",nama:"SILVIA RAMADHANI",sekolah:"SMP Ma'arif 8",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"13",nama:"MUTIARA DESCIA",sekolah:"Mts Al Islah SD Retno",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"15",nama:"M. EDWARD DWI ALANA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"16",nama:"NATASYA ANDA RISTA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"17",nama:"GIOVANO DWI FORTUNA",sekolah:"SMP IT Aqsa Al Maani",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"18",nama:"NASIFA NABILA",sekolah:"SMP IT Aqsa Al Maani",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"19",nama:"RAHMA AFIANTI",sekolah:"SMP IT Aqsa Almaani",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"21",nama:"ATIKA KAMALIA",sekolah:"SMP Negeri 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"22",nama:"NABILA ZAKIYA PUTRI",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"23",nama:"SITI TUMA'NINAH",sekolah:"SMP IT Aqsa Almaani",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"24",nama:"ADELIA MAESAROH",sekolah:"Mts Nurul Ulum Payung Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"25",nama:"MAVIKA NUR KHONIVA",sekolah:"SMP Ma'arif 8",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"26",nama:"INTAN NUR ALIZAH",sekolah:"SMP Negeri 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"27",nama:"RIKMA SASKIYA",sekolah:"SMP Ma'arif 8",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"28",nama:"SENEVI BAITI AULIA",sekolah:"SMPN 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"32",nama:"DHEA ANINDIA INTAN PRATIWI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"33",nama:"DELA AZ-ZAHRA",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"34",nama:"MUHAMMAD ALI NURDIN",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"35",nama:"IRFA TADIANSAH",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"37",nama:"NADIF FAIRUS ZAFAR",sekolah:"SMP Ma'arif 8 SD Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"38",nama:"EGI AIRA SAPUTRI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"39",nama:"NELA LATIFATUL MAHMUDAH",sekolah:"MTS N 1 Pringsewu",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"40",nama:"LAYLI NUR SYAFIRA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"41",nama:"ESTININGTYAS RAHMA INDRI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"42",nama:"LARAS NADIYA CAHYANI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"45",nama:"MELINDA NOVIANA",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"48",nama:"M FARKHAN NUR AZIZI",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"49",nama:"TRI SINTA NURHALIZAH",sekolah:"SMPN 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"50",nama:"NADHIRA ASTER NAYA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"51",nama:"KHOIRUL ARFAN",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"53",nama:"ANGGA SAPUTRA",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"54",nama:"RAFI WAFIK MUSYAWWAR",sekolah:"SMP N 2 Balai Jaya",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"55",nama:"EQTADA SYBILL MUHAMAD",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"56",nama:"AINI LATIFAH",sekolah:"SMP Negeri 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"57",nama:"ALIF RAMADHAN",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"58",nama:"RAVEL BAROKAH",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"59",nama:"TIRTA ADITIA",sekolah:"SMP Negeri 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"60",nama:"REZA ADI PUTRA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"61",nama:"MEI AJI SAPUTRA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"62",nama:"GHEFIRA RAU DHATULJANNAH",sekolah:"SMP Muhammadiyah 02 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"63",nama:"BELIVIA MAENURBAETI",sekolah:"SMP Muhammadiyah 02 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"64",nama:"M. ASRAF ALI AS SAUQI",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"65",nama:"HEZHA HAFIZH GUSWARA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"66",nama:"IMEL SEPTIANA",sekolah:"SMP Negeri Purworejo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"68",nama:"RIZQI SURYA PRATAMA",sekolah:"MTS Nurul Ulum Payung Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"69",nama:"ALFINO RENDI PANGESTU",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"70",nama:"KEVIN ALHUSAINI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"71",nama:"ALAN DARMA SAPUTRA",sekolah:"SMP Dharma Bhakti",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"72",nama:"RIO FANKA ALAMSYAH",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"73",nama:"FEBRIAN NIZAM ALVARO",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"74",nama:"MUHAMAD FAHRI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"75",nama:"FADILLAH HIDAYAT",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"76",nama:"LISA AULIA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"77",nama:"DESTY AZZAHRAH",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"78",nama:"TRI ENDANG SETIA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"82",nama:"KUNI ZAHRO DANIA",sekolah:"MTS Al Ma'ruf Margodadi",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"83",nama:"M ADITYA YUNANDA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"84",nama:"MUHAMAD DANI AKBAR",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"85",nama:"CHANDRA PUTRA HADIANA",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"86",nama:"DANDY GUNAWAN",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"87",nama:"ARFANO APRILIO",sekolah:"MTS Roudlotul Huda Purwosari",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"88",nama:"BUNGA DAMEY AZAROESCHA",sekolah:"MTS Misbahul Munir As Suhaili",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"89",nama:"CHANDRA DHANI FAJARI",sekolah:"SMP N 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"90",nama:"ZIVILIA SABILA KEYSHA",sekolah:"MTS Satu Atap Al-Barokah Poncowarno",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"91",nama:"ALDO REPANGGA",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"92",nama:"DANIEL BAGUS ARDIYANSYAH",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"93",nama:"ALFARIA FERLITA NOVALIN",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"94",nama:"ELISA AGUSTIN",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"95",nama:"WINDA AYU PRATIWI",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"96",nama:"SEKAR PRASTIWI",sekolah:"MTS Sabilul A'mal Kota Batu",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"97",nama:"RISKI RAMADHANI",sekolah:"SMP Guppi Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"98",nama:"RISKI SETIA BUDI",sekolah:"SMP Muhammadiyah Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Perlu Pembinaan",status:"Diterima"},
+{no:"99",nama:"SHAH RIKI APRILIANO",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"100",nama:"YUDHA PRASTIYA",sekolah:"MTS Nurul Ulum Payung Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"101",nama:"HANIFATUL KHOIRIYAH",sekolah:"SMPN 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"103",nama:"BINTANG LUKAS",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Perlu Pembinaan",status:"Diterima"},
+{no:"105",nama:"FADILLA NUR CAHYANI",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"106",nama:"ALIF RIZKI RAMADHANI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"107",nama:"DIKA AKBAR SETIYAWAN",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"108",nama:"RIFQI PRASETYO",sekolah:"MTS Al Mualimin Ma'arif 3 Sendang Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"109",nama:"NIZAM CALVIN BAHTIAR",sekolah:"SMP N 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Perlu Pembinaan",status:"Diterima"},
+{no:"110",nama:"INDRA KURNIAWAN",sekolah:"SMP PGRI 1 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"111",nama:"ROHMAH APRIYANI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"112",nama:"AHMAD SHOFI WIJAYA",sekolah:"MTS Al Muallimin Maarif 3 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"113",nama:"CHIKA DAMAYANTI",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"114",nama:"SYAFA ENDANG SETIAWATI",sekolah:"SMP N 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"115",nama:"DZAHRA TALITA ZAHRA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"116",nama:"DWI RATNA ANJANI",sekolah:"SMP N 2 Pubian",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"117",nama:"FIKA MELA PUTRI",sekolah:"SMP IT Aqsa Al Maani",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"118",nama:"ELLY NOVITA SARI",sekolah:"SMP 23 Mesuji",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"120",nama:"AHFINA NAYLA KHUSNA",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"121",nama:"SILVIANA ULFA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"122",nama:"SAPDIYAH",sekolah:"MTS Al Mu'alimin Maarif 3 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"123",nama:"AGUNG SEDAYU",sekolah:"MTs Satu Atap Al-Barokah Poncowarno",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"125",nama:"HERLINA WULANDARI",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"126",nama:"SALSABILA ALMUNAYA",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"127",nama:"MUFIDATUL AINI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"128",nama:"NINDIA NADHIMATU ZULFA",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"129",nama:"RIDO RASYA RAMADANI",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"130",nama:"RIKI ANDIKA PRATAMA",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"132",nama:"PUTRI AULIA JANAH",sekolah:"SMP Dharma Bhakti",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"135",nama:"M. FATHIR",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"136",nama:"MUHAMMAD RIDHO FADLY",sekolah:"SMP Dharma Bakti",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"138",nama:"ROSALIA SETIAWATI",sekolah:"SMP Maarif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"139",nama:"MUHAMAD ARIFIN",sekolah:"MTS Miftahul Huda Ma'arif 23 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"140",nama:"IDA ROYANI",sekolah:"MTS Al Bayari",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"143",nama:"AHMAD FAIZ ASHIDIQ",sekolah:"SMP I Kalirejo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"144",nama:"NARDA HAFIDZ MANSYUR",sekolah:"MTS Nurul Ulum Payung Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"145",nama:"NOVAL ADITIA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"146",nama:"SULTAN AJI PANGESTU",sekolah:"SMP Dharma Bhakti",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"147",nama:"AGUNG PRASETYO",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"148",nama:"HERI SETIAWAN",sekolah:"MTS Miftahul Huda Maarif 23 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"149",nama:"ALISYA NURAINI HANIFA",sekolah:"MTS Misbahul Munir As Suhaili",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"150",nama:"MUHAMAD NUR AZIZ",sekolah:"MTS Maarif 23 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"151",nama:"ARYA BUANA",sekolah:"SMP Guppi Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"152",nama:"AKMAL AZIZ TASHARUFKAN",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"153",nama:"RIDHO BAHARSYAH",sekolah:"SMP I Kalirejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"154",nama:"AGUS MUSTHOFA",sekolah:"SMP Dharma Bhakti",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"155",nama:"ZULHAM ANWAR",sekolah:"SMP M 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"156",nama:"EZA ADITYA EFENDI",sekolah:"SMP Negeri 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"157",nama:"ZAIDAN ALTAF AZZAM",sekolah:"SMP M 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Perlu Pembinaan",status:"Diterima"},
+{no:"159",nama:"AHMAD WALIL MUSOFA",sekolah:"SMP M 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"160",nama:"CAHYA ARTI PRATAMA",sekolah:"MTS Maarif 20 Kalidadi",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"162",nama:"DEFFA PUSPITA",sekolah:"SMP AM Mahfuziah",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"163",nama:"NIKHOLAS PRATAMA",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"164",nama:"ANGELIA AFADILA",sekolah:"SMP Islam Riadatul Falahin Sri Mulyo",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"165",nama:"RIZCO ALIF MEILANDRI",sekolah:"SMPN 2 Pematang Sawa",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"166",nama:"NAGYZZA FRISKYA NANDA",sekolah:"SMP 1 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"167",nama:"RIZAL HENDRIKO",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"168",nama:"KHOLIFATU ROSIDAH",sekolah:"SMPN 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"169",nama:"GILANG RIVALDO",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"-",status:"Diterima"},
+{no:"170",nama:"RENO HARDIANTO",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"171",nama:"NATASYA AMINARTI",sekolah:"MTS 20 Kalidadi",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"172",nama:"ARDI YANSAH",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"173",nama:"IQBAL MAULANA FIRMANSYAH",sekolah:"SMP 3 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"174",nama:"AMANDA SALSABILA",sekolah:"MTS Al Mua'alimin Sendang Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"175",nama:"ZAFIRA NURKHALISA",sekolah:"Mts Nurul Ulum",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"176",nama:"LHILVANI KAILATUNNISA",sekolah:"SMP Al Hikam",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"177",nama:"RIZKI BERLIANA",sekolah:"MTS Ma'arif 23",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"178",nama:"MUHAMAD ISKANDAR ROFINGI",sekolah:"SMPN Purworejo",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"180",nama:"DIKA ALIF MUBIN",sekolah:"MTs Nurul Ulum Payung Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"182",nama:"MUHAMMAD ZAINUL IHWAN",sekolah:"SMP IT Darul Hisoh",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"183",nama:"SELFIA TRI ANGGRAINI",sekolah:"SMP Muhammadiyah 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"185",nama:"DAVID",sekolah:"SMP Muhammadiyah 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"186",nama:"BUNGA HAZIYINNATUN AZIZAH",sekolah:"MTS Al Ghozali Wonosobo",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"187",nama:"MUHAMAD LABIB ALFIANSYAH",sekolah:"Mts Mualimin Sendang Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"188",nama:"AHMAD TAQIAN",sekolah:"SMPN 23 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"191",nama:"MELDI MUZADA ELFA",sekolah:"SMP Muhammadiyah 02 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"192",nama:"AHMAD SALIM",sekolah:"MTS SA Al-Basyari",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"193",nama:"TIA MONICA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"195",nama:"AHMAD FARIS",sekolah:"MTS Ma'arif 18 Nyukang Harjo",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"196",nama:"BASTI DANIEL FAWZI",sekolah:"SMP Dharma Bhakti",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"197",nama:"DEVI MARISKA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"198",nama:"FABIAN FAHREZA",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"199",nama:"SYIFA AZZAHRA ANJELITA",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"200",nama:"YOGA APRIYONO",sekolah:"SMP Muhammadiyah 02 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"201",nama:"TANTI",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"202",nama:"VICKA ASKIYA",sekolah:"SMP Ma'arif 1 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"203",nama:"ZAHWA VELICIA AZAHRA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"204",nama:"M. KHAIZ ALFIYANSYAH ALI",sekolah:"MTS Miftahul Huda Ma'arif 23 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"205",nama:"PUSPA RAISYA SHAID",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"208",nama:"RIZKI FATHUR ROHMAN",sekolah:"SMP Dharma Bhakti",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"209",nama:"CAHYA WIDARA",sekolah:"SMP Al Mahfuziah",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"210",nama:"IRSYAD ARKA SAPUTRA",sekolah:"MTS Miftahul Huda Ma'arif 23 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"211",nama:"IMANDA AMALIA",sekolah:"SMP N 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"212",nama:"DHIYA SYARAVIBA",sekolah:"MTS Ma'arif 20 Kalidadi",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"213",nama:"WAFIQ AZIZAH",sekolah:"SMP N 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"214",nama:"NIKO HARIS SAPUTRA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"216",nama:"ELA FITRIANA",sekolah:"SMP N 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"217",nama:"ELI FITRIANI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"218",nama:"NADIN AUREL LIA",sekolah:"SMPN 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"219",nama:"RAFA HAFIZ MAULANA",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"222",nama:"AZELO RIZKY ZHIGADITAMA",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"223",nama:"MUHAMAD ARFA ARAFIQ",sekolah:"MTS Miftahul Huda Ma'arif 23 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"224",nama:"M. ZIDAN AL HARIS",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"226",nama:"RIZA AZIZI",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"227",nama:"RIZKA ADELIA FADILAH",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"228",nama:"SYAFIRA AZIZAH",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"229",nama:"SAHRA NABILLA",sekolah:"SMP PGRI 1 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"230",nama:"RAFAEL HEAVEN FEEHILI",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"231",nama:"FEARLES HEAVEN FABIO",sekolah:"SMPN 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"233",nama:"RIZAL KURNIAWAN",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"234",nama:"DESTA AULIA PUTRI",sekolah:"MTS Misbahul Munir Ass-Suhaili",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"236",nama:"FADIL TRI AZIZAN",sekolah:"SMPN 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"237",nama:"AMIRA CAHAYA PUTRI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"238",nama:"AISYAH NADYA PUTRI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"239",nama:"VIDI MULIYA FANI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"240",nama:"SITI MUTMAINAH",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"241",nama:"JELITA PUTRI CAHYANI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"242",nama:"AKHTAR SETIAJI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"244",nama:"RASYA BIAN AFRIANSYAH",sekolah:"SMP N 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"245",nama:"SAFIRA MEI TRI ANTAMI",sekolah:"Mrs Al-Islah Ma'arif 14 Sendang Retno",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"247",nama:"ESLY AZZAHRA PUTRI",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"248",nama:"SEZHILIA",sekolah:"SMP PGRI 1 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"249",nama:"ELA ANDINI",sekolah:"SMP N 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"251",nama:"REVANA ANGGUN NOVELA",sekolah:"SMP Negeri 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"252",nama:"CINDY BUNGA LESTARI",sekolah:"SMP Guppi Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"254",nama:"PUTRI ANGGRAENI",sekolah:"SMP N 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"255",nama:"ANNISA SALSABILA",sekolah:"SMP Al-Mahfuziyah",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"257",nama:"JOHAN PRASETIA ANANTA",sekolah:"SMP N 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"259",nama:"FAREL AKBAR AL HAKIM",sekolah:"MTS Nurul Ulum Payung Rejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"260",nama:"AURA NATASYA",sekolah:"SMP N 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"261",nama:"DWI LUTVIANTI ARISTA",sekolah:"SMP N 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"262",nama:"KAYLA DEVI YANTI",sekolah:"SMP N 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"263",nama:"WILDAN DWI PUTRA",sekolah:"SMP PGRI 1 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"266",nama:"ZELDA MELIYANTI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"267",nama:"RIZKY RAMADHAN",sekolah:"SMP Negeri 2 Pubian",jurusan:"Teknik Komputer Jaringan",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"268",nama:"TIFANY NOVIANA PUTRI",sekolah:"SMP Guppi",jurusan:"Manajemen Perkantoran",kategori:"Dipertimbangkan",status:"Diterima"},
+{no:"269",nama:"AYU KURNIAWATI",sekolah:"SMP Ma'arif 8 Sendang Agung",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"270",nama:"ANGGUN WAHYU LESTARI",sekolah:"SMPN 2 Sendang Agung",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"271",nama:"DAMAR GEREN FADILAH",sekolah:"SMP I Kalirejo",jurusan:"Teknik Komputer Jaringan",kategori:"Direkomendasikan",status:"Diterima"},
+{no:"272",nama:"REVANA ANGGUN NOVELA",sekolah:"SMP IT Al Aqsha",jurusan:"Manajemen Perkantoran",kategori:"Sangat Direkomendasikan",status:"Diterima"},
+{no:"273",nama:"NAYLA LARASATI HARTONO",sekolah:"SMP Pangeran Diponegoro Balapulang",jurusan:"Manajemen Perkantoran",kategori:"Direkomendasikan",status:"Diterima"}
+];
+
+document.getElementById('search-form').addEventListener('submit',function(e){
+e.preventDefault();
+const val=document.getElementById('nama-input').value.trim().toLowerCase();
+const resultArea=document.getElementById('result-area');
+const errorArea=document.getElementById('error-area');
+const resultCard=document.getElementById('result-card');
+resultArea.classList.add('hidden');
+errorArea.classList.add('hidden');
+if(!val)return;
+const found=data.find(d=>d.nama.toLowerCase()===val);
+if(found){
+resultCard.innerHTML=`
+<p class="text-sm text-gray-500">No. Pendaftaran: <strong>${found.no}</strong></p>
+<p class="text-xl font-bold mt-1 text-gray-900">${found.nama}</p>
+<p class="text-sm text-gray-600 mt-2"><span class="font-medium">Asal Sekolah:</span> ${found.sekolah}</p>
+<p class="text-sm text-gray-600 mt-1"><span class="font-medium">Jurusan:</span> ${found.jurusan}</p>
+<p class="text-sm text-gray-600 mt-1"><span class="font-medium">Kategori:</span> ${found.kategori}</p>
+<p class="mt-3 font-bold text-lg text-emerald-600">✓ ${found.status}</p>
+`;
+resultArea.classList.remove('hidden');
+}else{
+errorArea.classList.remove('hidden');
+}
+});
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1457d9d75c66d44',t:'MTc4MjkwOTc0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
